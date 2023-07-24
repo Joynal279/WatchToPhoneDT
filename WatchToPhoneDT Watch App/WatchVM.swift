@@ -62,11 +62,6 @@ extension WatchVM: WCSessionDelegate {
             print("session activation failed with error: \(error.localizedDescription)")
         }
     }
-//    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-//            if let value = message["iPhone"] as? String {
-//                self.getDataFromPhone = value
-//            }
-//        }
 
 }
 

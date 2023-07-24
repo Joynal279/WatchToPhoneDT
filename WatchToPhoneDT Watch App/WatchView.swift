@@ -1,27 +1,30 @@
 //
 //  ContentView.swift
-//  WatchToPhoneDT
+//  WatchToPhoneDT Watch App
 //
 //  Created by Joynal Abedin on 24/7/23.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct WatchView: View {
     
-    @StateObject private var vm = PhoneVM()
+    @StateObject private var vm = WatchVM()
     
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text(vm.bookmarks.first?.title ?? "Hello Joy")
+            Text("Hello, world!")
+                .onTapGesture {
+                    vm.sentDataWatchToPhone()
+                }
         }
         .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    WatchView()
 }
