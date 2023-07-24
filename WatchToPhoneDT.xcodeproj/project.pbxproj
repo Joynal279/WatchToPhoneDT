@@ -17,6 +17,9 @@
 		F2DF85E92A6ED5A400156CA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2DF85E82A6ED5A400156CA3 /* Assets.xcassets */; };
 		F2DF85EC2A6ED5A400156CA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2DF85EB2A6ED5A400156CA3 /* Preview Assets.xcassets */; };
 		F2DF85F72A6ED62E00156CA3 /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DF85F62A6ED62D00156CA3 /* Bookmark.swift */; };
+		F2DF85F92A6ED8F500156CA3 /* PhoneVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DF85F82A6ED8F500156CA3 /* PhoneVM.swift */; };
+		F2DF85FB2A6ED90800156CA3 /* WatchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DF85FA2A6ED90800156CA3 /* WatchVM.swift */; };
+		F2DF85FC2A6ED94A00156CA3 /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DF85F62A6ED62D00156CA3 /* Bookmark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,8 @@
 		F2DF85E82A6ED5A400156CA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2DF85EB2A6ED5A400156CA3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F2DF85F62A6ED62D00156CA3 /* Bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
+		F2DF85F82A6ED8F500156CA3 /* PhoneVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneVM.swift; sourceTree = "<group>"; };
+		F2DF85FA2A6ED90800156CA3 /* WatchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 				F2DF85D62A6ED5A200156CA3 /* Assets.xcassets */,
 				F2DF85D82A6ED5A200156CA3 /* Preview Content */,
 				F2DF85F62A6ED62D00156CA3 /* Bookmark.swift */,
+				F2DF85F82A6ED8F500156CA3 /* PhoneVM.swift */,
 			);
 			path = WatchToPhoneDT;
 			sourceTree = "<group>";
@@ -120,6 +126,7 @@
 				F2DF85E62A6ED5A200156CA3 /* ContentView.swift */,
 				F2DF85E82A6ED5A400156CA3 /* Assets.xcassets */,
 				F2DF85EA2A6ED5A400156CA3 /* Preview Content */,
+				F2DF85FA2A6ED90800156CA3 /* WatchVM.swift */,
 			);
 			path = "WatchToPhoneDT Watch App";
 			sourceTree = "<group>";
@@ -235,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2DF85D52A6ED59E00156CA3 /* ContentView.swift in Sources */,
+				F2DF85F92A6ED8F500156CA3 /* PhoneVM.swift in Sources */,
 				F2DF85D32A6ED59E00156CA3 /* WatchToPhoneDTApp.swift in Sources */,
 				F2DF85F72A6ED62E00156CA3 /* Bookmark.swift in Sources */,
 			);
@@ -246,6 +254,8 @@
 			files = (
 				F2DF85E72A6ED5A200156CA3 /* ContentView.swift in Sources */,
 				F2DF85E52A6ED5A200156CA3 /* WatchToPhoneDTApp.swift in Sources */,
+				F2DF85FB2A6ED90800156CA3 /* WatchVM.swift in Sources */,
+				F2DF85FC2A6ED94A00156CA3 /* Bookmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +410,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.5;
 			};
 			name = Debug;
 		};
@@ -431,7 +441,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.5;
 			};
 			name = Release;
 		};

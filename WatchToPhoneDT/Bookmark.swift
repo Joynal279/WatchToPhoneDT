@@ -9,16 +9,16 @@ import Foundation
 
 struct Bookmark: Codable {
     let title: String
-    let date: Date
-    let pageURL: URL
+    let date: String
+    let pageURL: String
     
     func encodeIt() -> Data {
         let data = try! PropertyListEncoder.init().encode(self)
         return data
     }
     
-    func decodeIt(_ data: Data) -> Bookmark {
-        let bookMark = try! PropertyListDecoder.init().decode(Bookmark.self, from: data)
-        return bookMark
+    static func decodeIt(_ data: Data) -> Bookmark {
+        let bookmark = try! PropertyListDecoder.init().decode(Bookmark.self, from: data)
+        return bookmark
     }
 }
